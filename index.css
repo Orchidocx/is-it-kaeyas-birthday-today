@@ -4,6 +4,10 @@ body {
   background-image: url("images/genshin_04_4K.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -32,7 +36,7 @@ h1 {
 
 .countdown {
   flex-direction: row;
-  width: 50vw;
+  width: 30vw;
   justify-content: space-around;
 }
 
@@ -51,7 +55,7 @@ h1 {
 
 @media (max-width: 1980px) {
   .countdown {
-    width: 60vw;
+    width: 40vw;
   }
   body {
     /* background-image: url();
