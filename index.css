@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+body {
+  font-family: Itim, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  80% {
+    transform: translateY(1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
