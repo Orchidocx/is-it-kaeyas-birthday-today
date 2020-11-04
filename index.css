@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 body {
   font-family: Itim, sans-serif;
+  background-image: url("images/genshin_04_4K.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -19,6 +22,18 @@ h1 {
   opacity: 0;
   animation: 200ms fadeUp 1s forwards;
 }
+
+@media (max-width: 1980px) {
+  body {
+    /* background-image: url();
+    height: 100%;
+    background-color: aqua;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+}
+
 @media (max-width: 425px) {
   #kaeya-portrait {
     height: 350px;
