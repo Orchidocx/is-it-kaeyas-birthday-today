@@ -10,12 +10,6 @@ h1 {
   animation: fadeUp 1s forwards;
 }
 
-.container {
-  display: flex;
-  justify-content: flex-end;
-  /* width: 100vw; */
-}
-
 #kaeya-portrait {
   position: fixed;
   bottom: 0px;
