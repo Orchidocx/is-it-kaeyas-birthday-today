@@ -10,6 +10,27 @@ h1 {
   animation: fadeUp 1s forwards;
 }
 
+.container {
+  display: flex;
+  justify-content: flex-end;
+  /* width: 100vw; */
+}
+
+#kaeya-portrait {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  height: 600px;
+  object-fit: contain;
+  opacity: 0;
+  animation: 200ms fadeUp 1s forwards;
+}
+@media (max-width: 425px) {
+  #kaeya-portrait {
+    height: 350px;
+  }
+}
+
 @keyframes fadeUp {
   0% {
     opacity: 0;
