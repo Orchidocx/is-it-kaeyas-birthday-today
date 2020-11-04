@@ -7,6 +7,8 @@ const minute = second * 60;
 const hour = minute * 60;
 const day = hour * 24;
 
+const nowTimeElement = document.getElementById("now-time");
+
 let countdownActive;
 function updateDOM() {
   countdownActive = setInterval(() => {
@@ -14,6 +16,7 @@ function updateDOM() {
     const nowMonth = now.getMonth() + 1;
     const nowDate = now.getDate();
     const nowYear = now.getFullYear();
+    nowTimeElement.innerText = now.toLocaleTimeString();
     if (nowMonth === BIRTH_MONTH) {
       if (nowDate > BIRTH_DATE) {
         BIRTH_YEAR = nowYear + 1;
@@ -25,7 +28,6 @@ function updateDOM() {
     } else {
       BIRTH_YEAR = nowYear;
     }
-
     const targetDate = new Date(BIRTH_YEAR, BIRTH_MONTH - 1, BIRTH_DATE);
     console.log(targetDate.toLocaleDateString());
     if (nowMonth === BIRTH_MONTH && nowDate === BIRTH_DATE) {

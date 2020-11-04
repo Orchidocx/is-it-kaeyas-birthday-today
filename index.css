@@ -23,7 +23,36 @@ h1 {
   animation: 200ms fadeUp 1s forwards;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown {
+  flex-direction: row;
+  width: 50vw;
+  justify-content: space-around;
+}
+
+.countdown-element {
+  z-index: 1;
+  background-color: rgb(255 255 255 / 0.5);
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-element > p {
+  font-size: 20px;
+}
+
 @media (max-width: 1980px) {
+  .countdown {
+    width: 60vw;
+  }
   body {
     /* background-image: url();
     height: 100%;
@@ -35,8 +64,17 @@ h1 {
 }
 
 @media (max-width: 425px) {
+  .countdown {
+    width: 90vw;
+  }
   #kaeya-portrait {
     height: 350px;
+  }
+  .countdown-element {
+    padding: 0 10px 0 10px;
+  }
+  .countdown-element > p {
+    font-size: 16px;
   }
 }
 
