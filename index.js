@@ -54,6 +54,7 @@ function updateDOM() {
 
     if (nowMonth === BIRTH_MONTH && nowDate === BIRTH_DATE) {
       isBirthdayToday.innerHTML = "YES";
+
       clearInterval(countdownActive);
       daysElement.innerText = 0;
       hoursElement.innerText = 0;
