@@ -13,6 +13,7 @@ const hoursElement = document.getElementById("hours");
 const minutesElement = document.getElementById("minutes");
 const secondsElement = document.getElementById("seconds");
 const countdownContainer = document.getElementById("countdown-container");
+const isBirthdayToday = document.getElementById("is-birthday-today");
 
 let countdownActive;
 let clock;
@@ -52,6 +53,7 @@ function updateDOM() {
     secondsElement.innerText = seconds;
 
     if (nowMonth === BIRTH_MONTH && nowDate === BIRTH_DATE) {
+      isBirthdayToday.innerHTML = "YES";
       clearInterval(countdownActive);
       daysElement.innerText = 0;
       hoursElement.innerText = 0;
